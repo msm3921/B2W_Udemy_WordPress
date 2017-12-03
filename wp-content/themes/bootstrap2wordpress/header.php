@@ -16,9 +16,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	
+	<!--**** MSM ****-->
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory');?>/assets/css/bootstrap.min.css">
 	<!-- Font Icons -->
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/font-awesome/css/font-awesome.min.css">
 	<!-- Google Fonts -->
@@ -29,7 +29,7 @@
 	<!--[if lt IE 9] -->
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+	<!--[endif]-->
 </head>
 
 <body <?php body_class(); ?>>
@@ -50,13 +50,15 @@
 								<span class="icon-bar"></span>
 							</button>
 							<a class="navbar-brand"href="/">
-								<img src="assets/img/logo.png">
+								<img src="<?php bloginfo('stylesheet_directory');?>/assets/img/logo.png"
+								 alt="Bootstrap to WordPress"
+								>
 							</a>
 						</div> <!--Navbar header-->
 						
 						<?php
 							wp_nav_menu( array(
-								'theme_location'    => 'primary',
+								'theme_location'    => 'menu-1', /* see register_nav_menus() in functions.php */
 								'container'         => 'nav',
 								'container_class'   => 'navbar-collapse collapse',
 								'menu_class'        => 'nav navbar-nav navbar-right' 
