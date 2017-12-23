@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * The template for displaying the footer
  *
@@ -35,7 +35,7 @@
 				<div class="col-sm-3">
 					<p>
 						<a href="/">
-							<img src="assets/img/logo.png" alt="Bootstrap to Wordpress">
+							<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png" alt="Bootstrap to Wordpress">
 						</a> 
 					</p>
 				</div> <!-- end col -->
